@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+	<link rel="icon" href="">
+	<title>水具厨具馆</title>
+	<!--这里引入商城的样式 -->
+	<link href="http://m.mall.icbc.com.cn/mobile/styles/special.css" rel="stylesheet" type="text/css">
+	<!--商城js引入区域-->
+	<script type="text/javascript">
+        var realContextPath = 'http://m.mall.icbc.com.cn';
+	</script>
+	<!--如果感觉jquery版本较低，需要使用更高的jquery版本。可以替换这个jquery引用，换成需要的jquery版本。并且把需要的jquery文件放在js目录下。一定要确保唯一的jquery引用在该位置出现 -->
+	<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/scripts/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/specHeader.jhtml?callback=specHeader"></script>
+</head>
+<style>
+	.pfw {
+		display: none;
+	}
+</style>
+<body>
+<!--回调函数引入页头页尾-->
+<div id="specTop"></div>
+<script type="text/javascript">
+    var innerHtmlt = decodeURIComponent(specHeader.htmlContent);
+    $("#specTop").before(innerHtmlt);
+    $(".pfw").find(".title").html($("title").html() ? $("title").html() : "融e购");
+</script>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div id="specContent"></div>
+<div id="utj" style="display: none">
+	<script type="text/javascript" src="https://s96.cnzz.com/z_stat.php?id=1277661036&web_id=1277661036"></script>
+</div>
+<noscript>
+	<strong>We're sorry but mobile doesn't work properly without JavaScript enabled. Please enable it to
+		continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+<!--商城js引入区域-->
+<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/specFooter.jhtml?callback=specFooter"></script>
+<script type="text/javascript">
+    var innerHtmlb = decodeURIComponent(specFooter.htmlContent);
+    $("#specContent").after(innerHtmlb);
+</script>
+<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/scripts/jcommon.js"></script>
+</html>

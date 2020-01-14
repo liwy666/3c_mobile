@@ -1,0 +1,23 @@
+module.exports = {
+    assetsDir: undefined,
+    //publicPath: 'https://mate.ganglonggou.com/3c_mobile/',
+    //publicPath: 'https://mate.ganglonggou.com/new_3c_mobile/',
+    //publicPath: 'https://mate.ganglonggou.com/tmt_mobile/',
+    //publicPath: 'https://mate.ganglonggou.com/kettle_mobile/',
+    //publicPath: 'https://mate.ganglonggou.com/computer_mobile/',
+    //publicPath: 'https://mate.ganglonggou.com/appliances_mobile/',
+    //publicPath: 'https://mate.ganglonggou.com/new_iphone/',
+    //publicPath: 'https://mate.ganglonggou.com/new_iphone_twenty_four/',
+    //publicPath: 'https://mate.ganglonggou.com/new_iphone_drop/',
+    //publicPath: 'https://mate.ganglonggou.com/double_eleven/',
+    //publicPath: 'http://mate.ganglonggou.com:8003/test/double_eleven/',
+    //publicPath: 'https://mate.ganglonggou.com/double_eleven_burst/',
+    //publicPath: 'http://mate.ganglonggou.com:8003/test/double_eleven_burst/',
+    //publicPath: 'https://mate.ganglonggou.com/anniversary_mobile/',
+    publicPath: './',
+    outputDir: undefined,
+    runtimeCompiler: undefined,
+    productionSourceMap: undefined,
+    parallel: undefined,
+    css: undefined
+};

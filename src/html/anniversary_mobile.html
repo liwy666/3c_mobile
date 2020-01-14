@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="">
+	<title>数码电器分会场</title>
+	<!--css 引用区域-->
+	<!--这里引入商城的样式 -->
+	<link href="http://m.mall.icbc.com.cn/mobile/styles/special.css" rel="stylesheet" type="text/css">
+	<!--这里引入专题的样式 -->
+	<!--end css 引用区域-->
+	<!--商城js引入区域-->
+	<script type="text/javascript">
+        var realContextPath = 'http://m.mall.icbc.com.cn';
+	</script>
+	<style>
+		#cnzz_stat_icon_1278121473 {
+			display: none;
+		}
+
+		.pfw {
+			display: none;
+			position: absolute;
+			width: 375px;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			background-color: white;
+		}
+	</style>
+	<!--如果感觉jquery版本较低，需要使用更高的jquery版本。可以替换这个jquery引用，换成需要的jquery版本。并且把需要的jquery文件放在js目录下。一定要确保唯一的jquery引用在该位置出现 -->
+	<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/scripts/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/specHeader.jhtml?callback=specHeader"></script>
+</head>
+<body>
+<!--回调函数引入页头页尾-->
+<div id="specTop"></div>
+<script type="text/javascript">
+    var innerHtmlt = decodeURIComponent(specHeader.htmlContent);
+    $("#specTop").before(innerHtmlt);
+    $(".pfw").find(".title").html($("title").html() ? $("title").html() : "融e购");
+</script>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div id="specContent">
+	<!-- 专题内容存放区域  start-->
+	<!-- 专题内容存放区域  end-->
+</div>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<!--双11-->
+<script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278121473'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278121473' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--周年庆-->
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cspan id='cnzz_stat_icon_1278121473'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278121473' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+<!--商城js引入区域-->
+<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/specFooter.jhtml?callback=specFooter"></script>
+<script type="text/javascript">
+    var innerHtmlb = decodeURIComponent(specFooter.htmlContent);
+    $("#specContent").after(innerHtmlb);
+</script>
+<script type="text/javascript" src="http://m.mall.icbc.com.cn/mobile/scripts/jcommon.js"></script>
+<!-- 专题javascript存放区域  start-->
+<!-- 专题javascript存放区域  end-->
+</html>
